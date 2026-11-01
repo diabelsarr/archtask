@@ -341,7 +341,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                           Text(
-                            total == 0 ? 'No tasks' : '$completed / $total',
+                            total == 0 ? 'Aucune Tache' : '$completed / $total',
                             style: TextStyle(
                                 fontSize: 11, color: AppColors.textLabel),
                           ),
@@ -371,7 +371,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const Text(
-                      'Weekly Volume',
+                      'Votre programme de la semaine',
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w600,
@@ -670,9 +670,9 @@ class _HomeScreenState extends State<HomeScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Row(
         children: [
-          tab('All', _TaskFilter.all),
-          tab('Pending', _TaskFilter.pending),
-          tab('Done', _TaskFilter.done),
+          tab('Tout', _TaskFilter.all),
+          tab('En attente', _TaskFilter.pending),
+          tab('Effectué', _TaskFilter.done),
         ],
       ),
     );
@@ -687,7 +687,7 @@ class _HomeScreenState extends State<HomeScreen> {
               size: 48, color: AppColors.textPlaceholder),
           const SizedBox(height: 12),
           Text(
-            'No tasks here',
+            'Pas de tache ici',
             style: TextStyle(color: AppColors.textPlaceholder),
           ),
         ],

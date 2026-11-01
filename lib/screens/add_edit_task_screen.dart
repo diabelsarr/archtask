@@ -178,7 +178,7 @@ class _AddEditTaskScreenState extends State<AddEditTaskScreen> {
                     ),
                     const SizedBox(height: 24),
 
-                    Text('NOTES (OPTIONAL)', style: AppTextStyles.label),
+                    Text('NOTES (OPTIONEL)', style: AppTextStyles.label),
                     const SizedBox(height: 10),
                     _buildNotesField(),
                   ],
